@@ -1,0 +1,44 @@
+<div class="container">
+
+  <h2>😈 Lista de Cursos</h2>
+
+  <div class="actions">
+    <button class="btn-new" (click)="createCourse()">
+      ➕ Nuevo Curso
+    </button>
+  </div>
+
+  <table class="tabla">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Curso</th>
+        <th>Profesor</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let course of courses">
+
+        <td>{{ course.id }}</td>
+        <td>{{ course.name }}</td>
+        <td>{{ course.teacher }}</td>
+
+        <td>
+          <button
+            class="btn-edit"
+            (click)="editCourse(course)">
+            ✏️ Editar
+          </button>
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

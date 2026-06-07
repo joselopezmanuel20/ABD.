@@ -1,0 +1,51 @@
+<div class="container">
+
+  <h2>🎓 Lista de Estudiantes</h2>
+
+  <!-- BOTÓN NUEVO -->
+  <div class="actions">
+    <button class="btn-new" (click)="createStudent()">
+      ➕ Nuevo Estudiante
+    </button>
+  </div>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Curso</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let student of students">
+
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.courseId }}</td>
+
+        <td>
+
+          <button
+            class="btn-edit"
+            (click)="editStudent(student)">
+            ✏️ Editar
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

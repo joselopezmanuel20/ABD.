@@ -1,0 +1,59 @@
+.tabla{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+}
+
+.tabla th{
+  background:#2563eb;
+  color:white;
+  padding:12px;
+}
+
+.tabla td{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.btn-edit:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.5);
+}
+
+.btn-edit:active {
+  transform: scale(0.95);
+}
+.actions{
+  margin-bottom:20px;
+}
+
+.btn-new{
+  background: linear-gradient(135deg,#28a745,#20c997);
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-new:hover{
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(0,0,0,.2);
+}

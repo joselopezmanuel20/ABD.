@@ -1,0 +1,40 @@
+.welcome-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #6610f2
+    );
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.btn-enter{
+    background: white;
+    color: #0d6efd;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-enter:hover{
+    transform: scale(1.05);
+}
