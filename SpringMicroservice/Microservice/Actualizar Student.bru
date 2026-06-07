@@ -1,0 +1,25 @@
+meta {
+  name: Actualizar Student
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/api/student/update/5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "LocoMachin",
+      "lastName": "LOPEZ",
+      "email": "Vero123@example.com",
+      "courseId": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,23 @@
+meta {
+  name: POST MATERIA
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/course/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Deportes",
+      "teacher": "Juan"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

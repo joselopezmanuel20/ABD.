@@ -1,0 +1,25 @@
+meta {
+  name: POST CREAR
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/student/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Verito",
+      "lastName": "LOPEZ",
+      "email": "Vero123@example.com",
+      "courseId": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
